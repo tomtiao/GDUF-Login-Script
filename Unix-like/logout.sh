@@ -1,0 +1,1 @@
+curl "http://10.69.69.75/cgi-bin/wlogout.cgi" -d "login=%E4%B8%8B%E7%BA%BF"
