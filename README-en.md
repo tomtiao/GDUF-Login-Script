@@ -26,7 +26,7 @@ Only tested the Shell script on Bash in Ubuntu, Padavan and macOS.
 
 - The script for macOS should be working out of the box.
 
-- Auto-logon and auto-reconnect on disconnection are possible with the help of built-in auto script execution feature in some routers
+- Auto-logon and auto-reconnect on disconnection are possible with the help of built-in auto script execution feature in some routers.
 
 ## Usage
 
