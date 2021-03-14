@@ -12,18 +12,24 @@ $WirelessConnectedStatus = (Get-NetAdapter -InterfaceDescription $WirelessDesc).
 
 $MacAddr = $CurrentIPv4 = ""
 
+$WillConnectedTo
+
 # Wired
 if ($WirelessConnectedStatus -eq "Disconnected") {
     $Adapter = Get-NetAdapter -InterfaceDescription $WiredDesc
 
     $MacAddr = $Adapter.MacAddress
     $CurrentIPv4 = ($Adapter | Get-NetIPAddress).IPv4Address
+
+    $WillConnectedTo = $WiredDesc
 } # Wireless
 else {
     $Adapter = Get-NetAdapter -InterfaceDescription $WirelessDesc
 
     $MacAddr = $Adapter.MacAddress
     $CurrentIPv4 = ($Adapter | Get-NetIPAddress).IPv4Address
+
+    $WillConnectedTo = $WirelessDesc
 }
 
 $MacAddr = $MacAddr.ToLower() -replace "-", "%3A"
@@ -38,6 +44,8 @@ try {
     if ($jsonObj.code -ne "0") {
         Write-Output "Error: $($jsonObj.message). Error code: $($jsonObj.code)"
         Read-Host -Prompt "Press Enter to exit"
+    } else { # Restart adapter to avoid 'no connection'
+        Restart-NetAdapter -InterfaceDescription $WillConnectedTo
     }
 }
 catch {
