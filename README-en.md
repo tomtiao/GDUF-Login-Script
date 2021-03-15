@@ -4,9 +4,9 @@
 
 **The problems that need to be solved go beyond the original purpose of making the script.**
 
-**This repo has been archived.**
+**Alternatively, try [Auto-Login GDUF](https://gist.github.com/tomtiao/dbc45d20b6293e1292befca8f4a82b1c) with TamperMonkey**
 
-**Alternatively, try [Auto-Login GDUF](https://gist.github.com/tomtiao/9a44ac8090ba3e745987675ac5ccf888) with TamperMonkey**
+**This repo has been archived.**
 
 Save your valuable time by log in the GDUF network with a single click (sort of) on the script.
 
