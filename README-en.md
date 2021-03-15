@@ -2,6 +2,12 @@
 
 [中文](README.md)
 
+**The problems that need to be solved go beyond the original purpose of making the script.**
+
+**This repo has been archived.**
+
+**Alternatively, try [Auto-Login GDUF](https://gist.github.com/tomtiao/9a44ac8090ba3e745987675ac5ccf888) with TamperMonkey**
+
 Save your valuable time by log in the GDUF network with a single click (sort of) on the script.
 
 ## Features
