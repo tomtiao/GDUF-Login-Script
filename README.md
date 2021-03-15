@@ -4,9 +4,9 @@
 
 **需要解决的问题超出了做脚本的初衷**
 
-**已存档**
+**可搭配 TamperMonkey 插件[自动登录 GDUF](https://gist.github.com/tomtiao/dbc45d20b6293e1292befca8f4a82b1c)**
 
-**可搭配 TamperMonkey 插件[自动登录 GDUF](https://gist.github.com/tomtiao/9a44ac8090ba3e745987675ac5ccf888)**
+**已存档**
 
 等待登录页面弹出至少需要 5 秒钟，手动输入非 https 网址跳转到登录页面可以加快到 2 秒，右键运行脚本只需要 1 秒。
 
